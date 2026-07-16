@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "novada",
+  "version": "0.1.0",
+  "description": "C++ SDK for the Novada API (proxy management, scraping, wallet).",
+  "homepage": "https://github.com/NovadaLabs/novada-cpp",
+  "license": "MIT",
+  "dependencies": [
+    "curl",
+    "nlohmann-json",
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

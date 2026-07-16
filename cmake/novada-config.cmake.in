@@ -1,0 +1,13 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+# novada exposes CURL only as a private link dependency, but nlohmann_json is
+# part of the public interface (it appears in detail headers pulled in through
+# the umbrella includes), so downstream consumers must be able to find it.
+find_dependency(CURL)
+find_dependency(nlohmann_json)
+
+include("${CMAKE_CURRENT_LIST_DIR}/novada-targets.cmake")
+
+check_required_components(novada)

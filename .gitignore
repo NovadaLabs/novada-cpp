@@ -1,0 +1,27 @@
+# Build directories
+/build/
+/build-*/
+/cmake-build-*/
+/_stage*/
+/_consumer*/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+compile_commands.json
+
+# IDE
+/.idea/
+/.vs/
+*.user
+
+# Logs / scratch
+tidy.log
+/scratch/
+
+# OS
+.DS_Store
+Thumbs.db
+reference
+# Local FetchContent cache (offline builds)
+/.cache/
